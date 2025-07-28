@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Fade Barbershop</title>
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'SF Pro Display', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #1c1c1e;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 40px;
+      text-align: center;
+      background: #f5f5f7;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1c1c1e;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #007aff;
+    }
+
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      background: #000;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 56px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 32px;
+      background: #007aff;
+      color: white;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #005bb5;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .services-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .services-list li {
+      background: #f5f5f7;
+      padding: 30px;
+      border-radius: 20px;
+      width: 280px;
+      text-align: center;
+    }
+
+    .services-list h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .team-list {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .barber img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .barber h3 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #f5f5f7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fresh Fade Barbershop</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Barbers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Sharp Style, Every Time.</h2>
+    <p>Fade culture. Precision cuts. M2J vibes.</p>
+    <a href="#contact" class="btn">Book Now</a>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul class="services-list">
+      <li><h3>Haircut</h3><p>Classic & Modern Cuts</p><p>$25</p></li>
+      <li><h3>Beard Trim</h3><p>Shaped & Styled</p><p>$15</p></li>
+      <li><h3>Shave</h3><p>Hot Towel Straight Razor</p><p>$20</p></li>
+    </ul>
+  </section>
+
+  <section id="team">
+    <h2>Our Barbers</h2>
+    <div class="team-list">
+      <div class="barber">
+        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="Barber 1">
+        <h3>Jay</h3>
+        <p>Fade Expert</p>
+      </div>
+      <div class="barber">
+        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Barber 2">
+        <h3>Mo</h3>
+        <p>Lineup King</p>
+      </div>
+      <div class="barber">
+        <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Barber 3">
+        <h3>Tasha</h3>
+        <p>Creative Styles</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1605993439219-0705b5074b38?auto=format&fit=crop&w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1619815274499-7627ae4fbd68?auto=format&fit=crop&w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1621905253739-06bfa6e4cc3c?auto=format&fit=crop&w=800&q=80">
+      <img src="https://images.unsplash.com/photo-1587560699334-bea93391dcef?auto=format&fit=crop&w=800&q=80">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Book an Appointment</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone" required>
+      <textarea placeholder="Message or Request"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <br>
+    <p><strong>Address:</strong> M2J Barbershop, Québec City</p>
+    <p><strong>Phone:</strong> (418) 123-4567</p>
+    <p><strong>Hours:</strong> Mon–Sat: 9am–8pm</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fresh Fade Barbershop. Designed like Apple, cut like a king.</p>
+  </footer>
+</body>
+</html>
